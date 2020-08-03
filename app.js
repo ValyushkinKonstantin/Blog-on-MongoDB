@@ -7,7 +7,9 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 
 // mongoose.connect('mongodb://localhost/PersonalBlog');
-var uri = "mongodb://127.0.0.1:27017/blogDB";
+// var uri = "mongodb://127.0.0.1:27017/blogDB";
+const uri = "mongodb+srv://konstantin451:451451-F@cluster0.jc3a4.mongodb.net/blogBD?retryWrites=true&w=majority";
+
 
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
