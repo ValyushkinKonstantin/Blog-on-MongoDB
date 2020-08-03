@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 
 // mongoose.connect('mongodb://localhost/PersonalBlog');
 // var uri = "mongodb://127.0.0.1:27017/blogDB";
+const PORT = process.env.PORT||3000
 const uri = "mongodb+srv://konstantin451:451451-F@cluster0.jc3a4.mongodb.net/blogBD?retryWrites=true&w=majority";
 
 
@@ -106,6 +107,6 @@ app.get("/posts/:postId", function(req, res){
 
 
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("Server started on port 3000");
 });
